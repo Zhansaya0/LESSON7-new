@@ -15,10 +15,11 @@ public class TortActivity extends AppCompatActivity {
         foodName = findViewById(R.id.tortName);
 
         Intent intent = getIntent();
-        String tName = intent.getStringExtra("foodName");
-        String foodTaste_rating = intent.getStringExtra("foodTaste_rating");
-        String foodPrice = intent.getStringExtra("foodPrice");
+        String tortName = intent.getStringExtra("tortName");
+        String tortTaste_rating = intent.getStringExtra("tortTaste_rating");
+        String tortPrice = intent.getStringExtra("tortPrice");
+        String tortWeight = intent.getStringExtra("tortWeight");
 
-        foodName.setText(tName+" "+foodTaste_rating+" "+ foodPrice);
+        foodName.setText(tortName+" "+tortTaste_rating+" "+ tortPrice+" "+tortWeight);
     }
 }
